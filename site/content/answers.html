@@ -3,10 +3,14 @@
 	<head>
 		<title>Answers for Netlify</title>
 	</head>
-	<body style="background-color:"(160,197,196);">
-<p>1. I made my site by clicking on the provided link, https://jamstack.org/generators/, and selected Hugo for generating a quick static site. I have basic CSS and HTML skills, so I figured this would be a decent place to build a site. Everything I needed was generated with the 'Deploy to Netlify' button. Easy to integrate with my existing github.com account and get started. I just needed to figure out the file structure to place what I needed into the correct folders.</p>
-<p>2.I was able to get around most stuff with my past experiences. I did need some refreshers or update on where to put the 301 redirect, since an existing .htaccess file was not present. So needing to learn new ways of implementing old ideas was easy to learn on the site. I found the documentation easy to follow and it linked my past knowledge with present practices.</p>
-<p>3.	<h3>5 Favorite activities:</h3> 
+	<style>
+	body {background-color: #a0c5c4; margin: 30px; font-family: sans-serif;}
+	</style>
+	<body>
+
+<p>1. I made my site by clicking on the provided <a href="https://jamstack.org/generators/">link</a> and selected Hugo for generating a quick static site. I have basic CSS and HTML skills, so I figured this would be a decent place to build a site. Everything I needed was generated with the 'Deploy to Netlify' button. Easy to integrate with my existing github.com account and get started. I just needed to figure out the file structure to place what I needed into the correct folders.</p>
+<p>2. I was able to get around most stuff with my past experiences. I did need some refreshers or update on where to put the 301 redirect, since an existing .htaccess file was not present. So needing to learn new ways of implementing old ideas was easy to learn on the site. I found the documentation easy to follow and it linked my past knowledge with present practices.</p>
+3.<h3>5 Favorite activities:</h3>
 	<ol>
 		<li>Dig through server logs to troubleshoot a customer's website behavior</li>
 		<li>Respond to 50+ support requests via email or chat most days</li>
@@ -15,29 +19,29 @@
 		<li>Help train and onboard new support teammates</li>
 	</ol>
         <h3>5 Least favorite activities:</h3>
-	<ol>	
+	<ol>
 		<li>Create video tutorials to help teach users a specific feature or use case</li>
 		<li>Deliver a talk to many people you don't know at a conference or meetup</li>
 		<li>Debug a customer's buid using a programming language and framework that you've never seen before</li>
 		<li>Find and recruit teammates for the Support team</li>
-		<li>Write and maintain documentation for our software and blog posts for our website.</li>
+		<li>Write and maintain documentation for our software and blog posts for our website</li>
 	</ol>
-<p>4.Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.
-<p>5.	Reason 1-Peace of mind for the customer/end user is one reason for SSL/HTTPS importance. The display of the security padlock allows shoppers and data inputers to know that their information will be secure from prying eyes. This security measure instills confidence for the user that thier information will only be seen by the receiving company.
-		Reason 2- SSL/TLS/HTTPS creates a secure conversation tunnel with the TLS handshake that builds, maintains, and takes down the secure line for communication. All communication is then passed using symmetric or asymmetric encryption to hide the message being allowing it to only be decoded by the verified recipient. It is never good to send unencrypted usernames, passwords, or financial information.
-		Reason 3- Improved SEO. Google ranks sites with SSL/HTTPS with higher results. Often those without will receive a warning page cautioning users from continuing to a non-http website.
-
+<p>4. https://docs.docker.com/get-started/overview/
+I feel that the document section for Docker is well organized for ease of reference. Once you click into a section of interest the font and layout are very pleasing to look at. On the left is a menu structure allowing you to see all categories within any page. On the right is a page reference for skipping around up or down to the needed paragraph of interest.
+The structure and coloring of the page with various code examples allows for the user to easily find the particular helpful section to implement with their project.
+They even have a place for you to edit or request an edit to be made to their page. This is a very quick way for a user to address any typos or misleading information that would alert someone at Docker to keep the page improved and relevant.</p>
+<p>5.	<ul>
+		<li>Reason 1-Peace of mind for the customer/end user is one reason for SSL/HTTPS importance. The display of the security padlock allows shoppers and data inputers to know that their information will be secure from prying eyes. This security measure instills confidence for the user that thier information will only be seen by the receiving company.</li>
+		<li>Reason 2- SSL/TLS/HTTPS creates a secure conversation tunnel with the TLS handshake that builds, maintains, and takes down the secure line for communication. All communication is then passed using symmetric or asymmetric encryption to hide the message being allowing it to only be decoded by the verified recipient. It is never good to send unencrypted usernames, passwords, or financial information.</li>
+		<li>Reason 3- Improved SEO. Google ranks sites with SSL/HTTPS with higher results. Often those without will receive a warning page cautioning users from continuing to a non-http website.</li>
+</ul>
 <p>6.Explain, in a couple of paragraphs, what you think 2 major challenges around DNS configuration are for less-technical customers hosting websites.</p>
-Major Challenge 1- 
-Major Challenge 2- Understanding propagation tends to be a major challenge with less-technical customers. The typical user does not understand how web changes propagate across the internet requiring time for all servers to re-cache the information, especially if an ip address has been repointed. During outages, customers will want their domain pointed to a different server and not understand that by the time the internet is aware of this change the original server would probably be fixed.
+One major challenge for less-technical  customers would be understanding propagation. The typical user does not understand how web changes propagate across the internet requiring time for all servers to re-cache the information, especially if an ip address has been repointed. During outages, customers will want their domain pointed to a different server and not understand that by the time the internet is aware of this change the original server would probably be fixed.
+<br>The other major challenge would be understanding A records and all the
+<p>7.A customer writes in saying their “site won’t build”. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? Please compose your best customer-facing answer.</p>
+<p>8.As stated before, I was used to working with .htaccess file, I was able to implement the required changes using the redirects command in the netlify.toml file. I copied the recommended <a href="https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file">code</a> to the netlify.toml file. If I wanted a 301 redirect I would edit the status to reflect this type. My proxy redirect link is here:https://jobieg.netlify.app/netlify/anything.</p>
+<p>9.Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</p>
+<p>10. I would let the user know that we at Netlify take security very serious. Our team is constantly on the look out for vulnerabilites in the news or reported and take every step we can to deploy security updates across our site. Many vulnerabilities that are published tend to be zero-day security issues, meaning know one has knew/published about this issue before. We have discussions about security every week during our standups. Our developers We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will still leave the true impression that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?</p>
 
-7.A customer writes in saying their “site won’t build”. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? Please compose your best customer-facing answer.
-
-8.As stated before, I was used to working with .htaccess file, I was able to implement the required changes using the How would you set up an http 301 status redirect from “/netlify/anything” on your site, to https://www.google.com/search?q=anything How about a proxy redirect? Please add that proxy redirect rule to your site.
-
-9.Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.
-
-10.We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will still leave the true impression that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?
-11.(optional/bonus) Could you give us a suggestion to improve this test or the job posting?
 	</body>
 </html>
