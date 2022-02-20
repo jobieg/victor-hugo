@@ -3,6 +3,14 @@ languageCode = "en-us"
 languageLang = "en"
 title = "Jobie's Pinball World"
 
+[params]
+  description = "My Netlify technical assignment website built by [@jobieg](https://github.com/jobieg) using [Victor Hugo](https://github.com/netlify/victor-hugo)."
+  
+ [[menu.main]]
+    name = "About"
+    url  = "/about"
+    weight = 1
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
