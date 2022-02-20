@@ -3,3 +3,8 @@
   <main>{{- .Content -}}</main>
 </article>
 {{ end }}
+<h1 style="color: {{ .Params.color}};">Single Template</h1><hr><br>
+
+{{ funcName param1 param2 }}
+
+{{truncate 10 "This is a really long string"}}
