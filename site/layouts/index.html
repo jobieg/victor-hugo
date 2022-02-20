@@ -1,9 +1,13 @@
-{{ define "main" }}
+// {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+// <h1>Hugo with Webpack, Sass, and PostCSS</h1>
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+// <h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+// <a href="{{ "/tech" | relURL }}">Check out the tech</a>
 
-{{ end }}
+// {{ end }}
+
+<h1 style='"color: {{ .Params.color}};">Single Template</h1><hr><br>
+           
+           {{ truncate 10 "This is a really long string"}}
