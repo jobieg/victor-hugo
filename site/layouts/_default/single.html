@@ -1,10 +1,7 @@
-{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <main>{{- .Content -}}</main>
-</article>
-{{ end }}
-<h1 style="color: {{ .Params.color}};">Single Template</h1><hr><br>
+{{ partial "header" . }}
 
-{{ funcName param1 param2 }}
+<div class="content container">
+  {{ .Content }}
+</div>
 
-{{truncate 10 "This is a really long string"}}
+{{ partial "footer" . }}
